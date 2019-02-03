@@ -7,7 +7,7 @@ package edu.fsu.cs.cen5035;
 public class CrazyRandomSword extends BasicWeapon implements Weapon
 {
    /* Get a random number between 4 and 99 */
-   private static final int rand = (int) Math.random() * 99 + 4;
+   private static final int rand = (int)(Math.random() * 99 + 4);
 
    public CrazyRandomSword()
    {  
@@ -22,7 +22,7 @@ public class CrazyRandomSword extends BasicWeapon implements Weapon
    public int hit(int armor)
    {
       /* Do a randomn amount of damge based of the armor value */
-      int damage = DAMAGE - ((int) Math.random() * (armor/3) + 3);
+      int damage = DAMAGE - ((int)(Math.random() * (armor/3) + 3));
 
       if(damage < 0)
          return 0;
