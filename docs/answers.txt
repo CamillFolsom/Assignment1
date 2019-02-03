@@ -69,3 +69,9 @@ repo. In so doing the need to make sure to handle any conflicts that arise.
 Because of this the "Dictators and Lieutenants” workflow will allow the 
 developers to not have to spend their time handling conflicts caused by merging
 changes.
+
+5.
+It is using polymorphism because each weapon is being derived from the same 
+BasicWeapon class. It also uses encapsulation since we are using classes. 
+However, if we do not consider classes as encapsulation then this prototype is 
+not using encapsulation since we do not have any private variables.
