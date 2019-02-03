@@ -12,8 +12,8 @@ class HarbingerSword extends BasicWeapon implements Weapon
    @Override
    public int hit(int armor)
    {
-      /* Ignores 90% of the armor */
-      int damage = DAMAGE - (int)(armor*0.1);
+      /* Only always armor to prevent 9 damage */
+      int damage = DAMAGE - (armor - (10*(int)(Math.random() * 10 + 1)));
 
       if(damage < 0)
          return 0;
