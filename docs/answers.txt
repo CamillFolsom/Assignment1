@@ -1,0 +1,71 @@
+(a)
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 939 bytes | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CamillFolsom/Assignment1
+   f7a5d56..a396012  master -> master
+
+(b)
+There have been 10 total commits done on the repo.
+I used the command "git rev-list --all --count" to get this info.
+
+(c)
+.gitignore was last modified on Thursday September 15, 2016 at 10:29:34.
+I got this using the command "git log .gitignore".
+
+(d)
+One reason a branch is used is to abstract the changes being made so that 
+they do not affect the master branch of the repo until we are ready to.
+
+Another reason is branching allows us to have a branch for development, 
+bug fixes, etc. this allows us to leave the master branch as a stable version
+of the code. While the branches can be instable.
+
+(e)
+"git log" show us a list of all the commits done by all users. 
+"git status" tells us what files have been staged for commits with the "git add"
+command. It also tells us if a modified file is being track by git.
+
+(f)
+I would use the command "git log Weapon.java" to see Weapon.java's commits.
+
+(g)
+To see all the commits with the word file in the message I would us the 
+command "git log --grep "file"". 
+
+(h)
+   (I) Inheritance is when a class is derived from another class so that it 
+       inherits all the variables and functions of its parent class from which
+       it was derived.
+    
+  (II) Polymorphism is when we have multiple classes that are inheriting from
+       a single parent class so each child class inherits the variables
+       and functions from the same parent class.
+
+ (III) Encapsulation is when we hide parts of the classes implementations from
+       the user. We can use setter and getter functions to allow the user to
+       modify these variables or get these values without allowing the user to
+       read or change these variables directly. It can also refer to the 
+       bundling of variables and functions into a class.
+(i)
+For the “Dictator and Lieutenants” workflow the lieutenants are merging
+changes from developers. While the dictators are merging the changes for their 
+lieutenants. Both solve conflicts that arise.
+
+For the "Integration management" workflow each developer has their own public 
+repo. Each developer pulls from a blessed repo and pushes to their public repo.
+They can also pull from their own public repo. The integration manager then
+pulls the changes from the developer's public repo and merges the developers 
+changes into the blessed repo and deals with conflicts.
+
+(j)
+A team of 100 developers would benefit from the "Dictators and Lieutenants” 
+workflow instead of the "centralized" workflow because for centralized
+workflows each developer is required to merge their changes into the shared 
+repo. In so doing the need to make sure to handle any conflicts that arise.
+Because of this the "Dictators and Lieutenants” workflow will allow the 
+developers to not have to spend their time handling conflicts caused by merging
+changes.
