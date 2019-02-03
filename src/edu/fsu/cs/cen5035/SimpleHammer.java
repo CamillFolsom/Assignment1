@@ -18,6 +18,7 @@ public class SimpleHammer extends BasicWeapon implements Weapon
    {
       int damage;
 
+      /* Ignores all armor less than 30 */
       if(armor >= 30)         
          damage = DAMAGE - armor;
       else

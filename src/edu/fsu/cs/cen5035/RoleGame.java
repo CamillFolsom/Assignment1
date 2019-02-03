@@ -6,6 +6,12 @@ package edu.fsu.cs.cen5035;
  */
 public class RoleGame {
 
+    /**
+     * @name : testWeapon
+     * @biref: Used to test the weapon passed in agianst the armor values 0, 29,
+     *         and 30. It also prints out the hitpoints of the type of weapon
+     *         passed in.
+     */
     public static void testWeapon(Weapon weapon, String type)
     {
        int armor[] = {0, 29, 30};

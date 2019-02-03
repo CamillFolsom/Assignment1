@@ -12,7 +12,7 @@ class HarbingerSword extends BasicWeapon implements Weapon
    @Override
    public int hit(int armor)
    {
-      /* Only always armor to prevent 9 damage */
+      /* 10 times random number 1-10 determines how much armor we ignore */
       int damage = DAMAGE - (armor - (10*(int)(Math.random() * 10 + 1)));
 
       if(damage < 0)
